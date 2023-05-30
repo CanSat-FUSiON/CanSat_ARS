@@ -2,7 +2,8 @@
 
 **Present Version : ARS-1.00**   
 誰かが個人単位でリファクタリングやデバッグしたら+0.01，ミッションぐるみで大型アップデートをしたら+1.00して小数部切り捨て．
-編集したら更新すること
+編集したら更新すること  
+ToDoはここに記すと管理しやすい：https://github.com/orgs/CanSat-FUSiON/projects/5/views/1?layout=board
 
 ## ディレクトリ説明
 |ディレクトリ名|説明|
