@@ -12,7 +12,7 @@ class Logs:
         self.ffnm = str('ff_'+nm)
         self.camnm = str('cam_'+nm)
 
-    def ff_log(self, loglist):  # from flightの意味。通信と一緒に動くので、GPSのデータを常に残し続ける。(GPS以外の情報も残そう・・・)
+    def ff_log(self, loglist):  # from flightの意味。通信と一緒に動くので、GPSのデータを常に残し続ける。
         f = open('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/logs/'+self.ffnm+'.csv', "a")
         f.write(str(datetime.datetime.now(self.timezone)))
         for log in loglist:
@@ -21,7 +21,7 @@ class Logs:
         f.write('\n')
         f.close
 
-    def con_log(self, loglist):  # 制御履歴を残すコード。
+    def con_log(self, loglist):  # 制御履歴を残すメソッド。
         f = open('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/logs/'+self.connm+'.csv', "a")
         f.write(str(datetime.datetime.now(self.timezone)))
         for log in loglist:

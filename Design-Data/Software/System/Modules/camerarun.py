@@ -15,7 +15,7 @@ class Camerarun:
         self.pt_time = pt_time
         self.savesign = 0
 
-    def getdata(self):
+    def getdata(self):  # 画像データを取得するメソッド。
         with picamera.PiCamera() as camera:
             with picamera.array.PiRGBArray(camera) as stream:
                 self.savesign = (self.savesign + 1) % 5

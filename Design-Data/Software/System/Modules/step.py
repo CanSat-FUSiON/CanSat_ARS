@@ -7,7 +7,7 @@ class Step:
             datetime.timedelta(hours=-7), name='US')
         self.starttime = datetime.datetime.now(self.timezone)
 
-    def set_all_steptime(self):  # とりあえずすべてのメンバの時間を合わせる。
+    def set_all_steptime(self):  # すべてのメンバの時間を合わせる。
         nowtime = datetime.datetime.now(self.timezone)
         self.longsleep_steptime = nowtime
         self.landing_steptime = nowtime

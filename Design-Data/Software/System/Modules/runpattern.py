@@ -23,7 +23,7 @@ GPIO.setup(nicr_burn, GPIO.OUT)
 GPIO.setwarnings(False)
 
 
-def first():  # 初めにモーターが回りだしてしまうため。(ピン番号変更必須)
+def first():  # はじめにモーターの回転を制御する。
     GPIO.output(left_back, GPIO.LOW)
 
 

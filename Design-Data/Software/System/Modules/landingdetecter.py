@@ -62,11 +62,11 @@ class Landingdetecter:
             time.sleep(0.1)
             danger = 1+danger
 
-    def detect(self):
+    def detect(self):  # 着地したことを判定。
         if max(self.diflist) < 0.1 or self.detectingtime > self.time_limit:
             self.detectsign = 1
 
-    def nicrburn(self):
+    def nicrburn(self):  # ニクロム線の焼き切りを行うメソッド。
         morter_RUN.burning(self.burn_time)
 
     def finish_run(self,runtime):
