@@ -1,0 +1,20 @@
+.PICO :1 ;RP2040 microcontroller chip designed by Raspberry Pi in the United Kingdom 2  SPI, 2  I2C, 2  UART, 3  12-bit ADC, 16  controllable PWM channels
+PICO
+*STM J
+*NGS
+*PNM 1=1 2=2 3=3 4=4 5=5 6=6 7=7 8=8 9=9 10=10 11=11 12=12 13=13 14=14 15=15 16=16 17=17 18=18 19=19 20=20 21=21 22=22 23=23 24=24 25=25 26=26 27=27 28=28 29=29 30=30 31=31 32=32 33=33 34=34 35=35 36=36 37=37 38=38 39=39 40=40 41=D1 42=D2 43=D3 44=TP1 45=TP2 46=TP3 47=TP4 48=TP5 49=TP6
+*PLB 1="GP0" 2="GP1" 3="GND_1" 4="GP2" 5="GP3" 6="GP4" 7="GP5" 8="GND_2" 9="GP6" 10="GP7" 11="GP8" 12="GP9" 13="GND_3" 14="GP10" 15="GP11" 16="GP12" 17="GP13" 18="GND_4" 19="GP14" 20="GP15" 21="GP16" 22="GP17" 23="GND_5" 24="GP18" 25="GP19" 26="GP20" 27="GP21" 28="GND_6" 29="GP22" 30="RUN" 31="GP26_A0" 32="GP27_A1" 33="GND_7" 34="GP28_A2" 35="ADC_VREF" 36="3V3(OUT)" 37="3V3_EN" 38="GND_8" 39="VSYS" 40="VBUS" 41="SWCLK" 42="GND_9" 43="SWDIO" 44="GND_10" &
+45="USB DM" 46="USB DP" 47="GPIO23/SMPS PS PIN (DO NOT USE)" 48="GPIO25/LED (NOT RECOMMENDED TO BE USED)" 49="BOOTSEL"
+*MXP 49
+*DFN PICO
+~!Manufacturer_Name (RASPBERRY-PI)
+~!Manufacturer_Part_Number (PICO)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://datasheets.raspberrypi.org/pico/pico_datasheet.pdf)
+~!Height (1mm)
+~!3D_Model (PICO)
+PICO
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 25.1!U 26.1!U 27.1!U 28.1!U 29.1!U 30.1!U 31.1!U 32.1!U 33.1!U 34.1!U 35.1!U 36.1!U 37.1!U 38.1!U 39.1!U 40.1!U 41.1!U 42.1!U 43.1!U 44.1!U 45.1!U 46.1!U 47.1!U 48.1!U 49.1!U 

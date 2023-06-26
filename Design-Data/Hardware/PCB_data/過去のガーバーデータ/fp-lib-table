@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name "Regulator")(type "KiCad")(uri "${KIPRJMOD}/Regulator.pretty")(options "")(descr ""))
+  (lib (name "switch")(type "KiCad")(uri "${KIPRJMOD}/switch.pretty")(options "")(descr ""))
+  (lib (name "Mosfet")(type "KiCad")(uri "${KIPRJMOD}/Mosfet.pretty")(options "")(descr ""))
+  (lib (name "hole")(type "KiCad")(uri "${KIPRJMOD}/hole.pretty")(options "")(descr ""))
+  (lib (name "RaspberryPiPico")(type "KiCad")(uri "${KIPRJMOD}/RaspberryPiPico.pretty")(options "")(descr ""))
+  (lib (name "KiCad")(type "KiCad")(uri "C:/Users/abema/Downloads/LIB_PICO/PICO/KiCad")(options "")(descr ""))
+)

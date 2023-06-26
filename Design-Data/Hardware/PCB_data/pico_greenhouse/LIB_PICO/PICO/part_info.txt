@@ -1,0 +1,9 @@
+Manufacturer=RASPBERRY-PI
+PartNumber=PICO
+PartCategory=Connector
+PackageCategory=Other
+PinCount=49
+Version=1.3
+Released=2021-01-25 10:09:12
+Downloaded=2022-08-14 14:16:37
+3D=Y

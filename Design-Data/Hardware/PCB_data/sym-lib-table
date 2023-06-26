@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name "TK25S06N1L_LQ")(type "Legacy")(uri "C:/Users/abema/Downloads/LIB_TK25S06N1L,LQ/TK25S06N1L,LQ/KiCad/TK25S06N1L_LQ.lib")(options "")(descr ""))
+  (lib (name "RaspberryPi")(type "KiCad")(uri "${KIPRJMOD}/RaspberryPi.kicad_sym")(options "")(descr ""))
+  (lib (name "New_Library")(type "KiCad")(uri "${KIPRJMOD}/Regulator.pretty/New_Library.kicad_sym")(options "")(descr ""))
+  (lib (name "Regulator1")(type "KiCad")(uri "${KIPRJMOD}/Regulator1.kicad_sym")(options "")(descr ""))
+  (lib (name "TB67H450FNG_EL")(type "Legacy")(uri "C:/Users/abema/Downloads/LIB_TB67H450FNG,EL (1)/TB67H450FNG,EL/KiCad/TB67H450FNG_EL.lib")(options "")(descr ""))
+)
