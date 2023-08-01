@@ -7,7 +7,7 @@ import json
 
 
 class Communicator:
-    def __init__(self, bus, logclass, gps_socket, data_stream):
+    def __init__(self, bus, logclass, gps_socket, data_stream):  # 初期設定を行うメソッド。
         self.bus = bus
         self.logclass = logclass  # logを残すためのクラスをこちらに代入。
         self.gps_socket = gps_socket
@@ -18,7 +18,7 @@ class Communicator:
         # 初めのセッティングでマルチプロセスの関数をメンバに入れている。(multi_running_communicationへ)
         self.commrunning = self.multi_running_communication()
 
-    def communication(self):  # 通信で８桁ずつ数値を送るために情報を変更してる。
+    def communication(self):  # 通信で８桁ずつ数値を送るメソッド。
         lat_1 = math.floor(self.lat_i)
         lat_2 = math.floor(self.lat_i*100 - lat_1*100)
         lat_3 = math.floor(self.lat_i*10000 - lat_1*10000 - lat_2*100)
@@ -83,7 +83,7 @@ class Communicator:
                 if new_data_dict["class"] != "TPV":
                     continue
 
-                # ref: https://github.com/wadda/gps3/blob/master/gps3/gps3.py ← こちらを参考に。
+                # ref: https://github.com/wadda/gps3/blob/master/gps3/gps3.py
                 self.data_stream.unpack(new_data)
                 if self.data_stream.TPV["time"] == "n/a":
                     continue
@@ -105,14 +105,14 @@ class Communicator:
             self.loglist = [self.lat_i, self.lon_i]
             self.communication()
 
-    def running(self):
+    def running(self):  # 通信を行い続けるメソッド。
         while True:
             self.gpsget_com()  # gpsget_comというメソッドを開始。
             if self.loglist != [0, 0]:
                 self.logclass.ff_log(self.loglist)  # ファイルにlogのデータを書き込む。
             time.sleep(2)
 
-    # プロセスを2つ平行に進めるためのもの。もし片方が止まったらもう一方も止まるという設計だと困るため、通信と制御は一緒に行う必要がある。
+    # プロセスを2つ平行に進めるためのメソッド。もし片方が止まったらもう一方も止まるという設計だと困るため、通信と制御は一緒に行う必要がある。
     def multi_running_communication(self):
         # runningというメソッドを並行で処理するという命令。
         commrunning = multiprocessing.Process(target=self.running)

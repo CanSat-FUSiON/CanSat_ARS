@@ -4,8 +4,8 @@ import random
 import runpattern
 
 
-class Accstack:
-    def __init__(self, ygradlist, startstack_THR, finishstack_THR, turnover_THR, pitch_time, ygradoffset):
+class Accstack:  # 加速によるスタック判定を行うクラス。
+    def __init__(self, ygradlist, startstack_THR, finishstack_THR, turnover_THR, pitch_time, ygradoffset):  # 初期設定を行うメソッド。
         self.ygradlist = ygradlist
         self.startstack_THR = startstack_THR
         self.finishstack_THR = finishstack_THR
@@ -88,7 +88,7 @@ class Accstack:
         print("escale rut")
 
 
-class Gpsstack:
+class Gpsstack:  # GPSによるスタック判定を行うクラス。
     def __init__(self,  GPS_stack_radius, latlist, lonlist, latrate, lonrate, pitch_time):
         self.GPS_stack_radius = GPS_stack_radius
         self.latlist = latlist
@@ -164,7 +164,7 @@ class Gpsstack:
         print("escale rut")
 
 
-class Stackrun:
+class Stackrun:  # スタックした場合の走行パターンを実行するクラス。
     def __init__(self):
         pass
 

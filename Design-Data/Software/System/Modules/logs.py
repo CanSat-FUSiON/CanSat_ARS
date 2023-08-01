@@ -2,7 +2,7 @@ import datetime
 
 
 class Logs:
-    def __init__(self):
+    def __init__(self):  # 初期設定を行うメソッド。
         self.timezone = datetime.timezone(
             datetime.timedelta(hours=-7), name='US')
         self.flight_starttime = datetime.datetime.now(self.timezone)
@@ -12,8 +12,8 @@ class Logs:
         self.ffnm = str('ff_'+nm)
         self.camnm = str('cam_'+nm)
 
-    def ff_log(self, loglist):  # from flightの意味。通信と一緒に動くので、GPSのデータを常に残し続ける。
-        f = open('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/logs/'+self.ffnm+'.csv', "a")
+    def ff_log(self, loglist):  # はじめの状態からlogを出力するメソッド。ff は from flightの意味。通信と一緒に動くので、GPSのデータを常に残し続ける。「***」は任意のフォルダを選択する。
+        f = open('/***/'+self.ffnm+'.csv', "a")
         f.write(str(datetime.datetime.now(self.timezone)))
         for log in loglist:
             f.write(',')
@@ -22,7 +22,7 @@ class Logs:
         f.close
 
     def con_log(self, loglist):  # 制御履歴を残すメソッド。
-        f = open('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/logs/'+self.connm+'.csv', "a")
+        f = open('/***/'+self.connm+'.csv', "a")
         f.write(str(datetime.datetime.now(self.timezone)))
         for log in loglist:
             f.write(',')
@@ -30,8 +30,8 @@ class Logs:
         f.write("\n")
         f.close
 
-    def cam_log(self, loglist):
-        f = open('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/logs/'+self.camnm+'.csv', "a")
+    def cam_log(self, loglist):  # 画像処理走行の制御履歴を残すメソッド。
+        f = open('/***/'+self.camnm+'.csv', "a")
         f.write(str(datetime.datetime.now(self.timezone)))
         for log in loglist:
             f.write(',')

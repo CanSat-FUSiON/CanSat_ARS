@@ -5,7 +5,7 @@ import runpattern
 
 
 class Gpsrunner:
-    def __init__(self, goal_lat, goal_lon, radius_Earth, THRESHOLD, distance_THR, pitch_time=1):
+    def __init__(self, goal_lat, goal_lon, radius_Earth, THRESHOLD, distance_THR, pitch_time=1):  # 初期設定を行うメソッド。
         self.goal_lat = goal_lat
         self.goal_lon = goal_lon
         self.radius_Earth = radius_Earth
@@ -13,7 +13,7 @@ class Gpsrunner:
         self.distance_THR = distance_THR
         self.pitch_time = pitch_time
 
-    def set(self, rawvalue):
+    def set(self, rawvalue):  # GPSの値をインスタンスのメンバに代入するメソッド。
         self.lat = rawvalue.lat
         self.lon = rawvalue.lon
         self.now_x = self.get_nowx()
@@ -34,44 +34,44 @@ class Gpsrunner:
         self.loglist = [self.lat, self.lon,
                         math.sin(math.radians(self.arg_degree)), math.cos(math.radians(self.arg_degree)), self.control_sign]
 
-    def radworld(self):
+    def radworld(self):  # 同緯度円の半径を求めるメソッド。
         length_world = self.radius_Earth * math.cos(math.radians(self.lat))
         return length_world
 
-    def get_nowx(self):
+    def get_nowx(self):  # 現在のゴールまでの同緯度円方向の距離を求めるメソッド。
         now_x = self.radworld() * math.radians(self.goal_lon-self.lon)
         return now_x
 
-    def get_nowy(self):
+    def get_nowy(self):  # 現在のゴールまでの同経度方向の距離を求めるメソッド。
         now_y = self.radius_Earth * math.radians(self.goal_lat - self.lat)
         return now_y
 
-    def get_polarntg(self):
+    def get_polarntg(self):  # ゴール方向の角度を求めるメソッド。
         polar_ntg = math.degrees(math.atan2(self.now_y, self.now_x))
         return polar_ntg
 
-    def get_degntg(self):
+    def get_degntg(self):  # ゴール方向の角度をより扱いやすい数値に変更するメソッド。
         deg_ntg = 90 - self.polar_ntg
         if deg_ntg < 0:
             deg_ntg = deg_ntg + 360
         return deg_ntg
 
-    def get_distancentg(self):
+    def get_distancentg(self):  # ゴールまでの距離を算出するメソッド。
         distance_ntg = geodesic(
             (self.goal_lat, self.goal_lon), (self.lat, self.lon)).m
         return distance_ntg
 
-    def _rad_magnet(self):
+    def _rad_magnet(self):  # 地磁気方向を算出するメソッド。
         rad = math.atan2(self.mag_y, self.mag_x)
         return rad
 
-    def get_arg_degree(self):
+    def get_arg_degree(self):  # 算出した地磁気方向に修正を加えるメソッド。
         arg_degree = math.degrees(self._rad_magnet()) + self.offset_mag_degree
         if arg_degree < 0:
             arg_degree = arg_degree + 360
         return arg_degree
 
-    def get_orient(self):
+    def get_orient(self):  # 自分の向いている方向とゴール方向の間の角度を求めるメソッド。
         if self.arg_degree < self.deg_ntg:
             arg_degree = self.arg_degree + 360
         else:
@@ -79,7 +79,7 @@ class Gpsrunner:
         orient = arg_degree - self.deg_ntg
         return orient
 
-    def gpscontrol(self):
+    def gpscontrol(self):  # ゴール方向への制御コマンドを決定するメソッド。
         if 0 <= self.orient < self.THRESHOLD or (360 - self.THRESHOLD) < self.orient < 360:
             control_sign = 0
         elif (self.THRESHOLD) < self.orient <= (180):
@@ -88,7 +88,7 @@ class Gpsrunner:
             control_sign = 2
         return control_sign
 
-    def gpsrun(self, motor):
+    def gpsrun(self, motor):  # 決定された制御コマンドにしたがって走行するメソッド。
         if self.control_sign == 0:
             motor.forward_gps()
         elif self.control_sign == 1:
@@ -96,10 +96,10 @@ class Gpsrunner:
         elif self.control_sign == 2:
             motor.right()
 
-    def gpsrunfinish(self):
+    def gpsrunfinish(self):  # gps走行が終了したときに停止するメソッド。
         runpattern.stop()
 
-    def gpsrun_print(self):
+    def gpsrun_print(self):  # gpsの値をコマンドラインに出力するメソッド。
         print("\n----------------------")
         print("goal latitude:", self.goal_lat)
         print("goal lontitude:", self.goal_lon)

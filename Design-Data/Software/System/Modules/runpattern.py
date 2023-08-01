@@ -23,11 +23,11 @@ GPIO.setup(nicr_burn, GPIO.OUT)
 GPIO.setwarnings(False)
 
 
-def first():  # はじめにモーターの回転を制御する。
+def first():  # 電源入力時に電圧がかかるピンの制御を行う関数。
     GPIO.output(left_back, GPIO.LOW)
 
 
-def stop(x=0):
+def stop(x=0):  # 走行を停止する(以下、名前通りのためコメントは省略)
     GPIO.output(right_front, GPIO.LOW)
     GPIO.output(left_front, GPIO.LOW)
     GPIO.output(right_back, GPIO.LOW)
@@ -141,7 +141,7 @@ def sign_off():
     return()
 
 
-def burning(burningtime):
+def burning(burningtime):  # ニクロム線を焼き切る関数。
     GPIO.output(nicr_burn, GPIO.HIGH)
     time.sleep(burningtime)
     GPIO.output(nicr_burn, GPIO.LOW)
@@ -162,42 +162,42 @@ def escape1(runtime):  # reforward(x):  # back and forward
     return()
 
 
-def escape2(runtime=0):  # 左輪乗り上げたときの脱出
+def escape2(runtime=0):  # 左輪乗り上げたときの脱出を行う関数。
     leftbackturn(1)
     back(3)
     stop()
     return()
 
 
-def escape3(runtime=0):  # 右輪乗り上げたときの脱出
+def escape3(runtime=0):  # 右輪乗り上げたときの脱出を行う関数。
     rightbackturn(1)
     back(3)
     stop()
     return()
 
 
-def escape4(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape4(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     leftspin(runtime)
     forward(2)
     stop()
     return()
 
 
-def escape5(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape5(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     rightspin(runtime)
     forward(2)
     stop()
     return()
 
 
-def escape6(runtime=1):  # 転倒したときの復帰に最適 まずこれを試す
+def escape6(runtime=1):  # 転倒したときの復帰に最適な関数。
     back(runtime)
     forward(2)
     stop()
     return()
 
 
-def escape7(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape7(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     leftbackturn(runtime)
     back(1)
     forward(2)
@@ -205,7 +205,7 @@ def escape7(runtime=1):  # 転倒したとき・スタックしたとき両方�
     return()
 
 
-def escape8(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape8(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     rightbackturn(runtime)
     back(1)
     forward(2)
@@ -213,7 +213,7 @@ def escape8(runtime=1):  # 転倒したとき・スタックしたとき両方�
     return()
 
 
-def escape9(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape9(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     leftspin(runtime)
     back(1)
     forward(2)
@@ -221,7 +221,7 @@ def escape9(runtime=1):  # 転倒したとき・スタックしたとき両方�
     return()
 
 
-def escape10(runtime=1):  # 転倒したとき・スタックしたとき両方に有効
+def escape10(runtime=1):  # 転倒したとき・スタックしたとき両方に有効な走行を行う関数。
     rightspin(runtime)
     back(1)
     forward(2)

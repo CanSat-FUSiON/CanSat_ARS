@@ -3,7 +3,7 @@ import json
 
 
 class Sensor:
-    def __init__(self, i2c, sensor, gps_socket, data_stream, lastval, offset_mag_x, offset_mag_y, offset_mag_degree):
+    def __init__(self, i2c, sensor, gps_socket, data_stream, lastval, offset_mag_x, offset_mag_y, offset_mag_degree):  # 初期設定を行うメソッド。
         self.i2c = i2c
         self.sensor = sensor
         self.gps_socket = gps_socket
@@ -13,16 +13,16 @@ class Sensor:
         self.offset_mag_y = offset_mag_y
         self.offset_mag_degree = offset_mag_degree
 
-    def set_gps(self):
+    def set_gps(self):  # gpsの値をインスタンスのメンバに代入するメソッド。
         self.lat, self.lon = self.gpsget()
 
-    def set_mag(self):
+    def set_mag(self):  # 地磁気の値をインスタンスのメンバに代入するメソッド。
         self.mag_x, self.mag_y, self.mag_z = self.getmag()
 
-    def set_acc(self):
+    def set_acc(self):  # 重力加速度の値をインスタンスのメンバに代入するメソッド。
         self.acc_x, self.acc_y, self.acc_z = self.getacc()
 
-    def gpsget(self):
+    def gpsget(self):  # GPSの値を取得するメソッド。
         try:
             gps_dict = {
                 "time": "n/a",
@@ -58,16 +58,16 @@ class Sensor:
             lon_i = 0
             return (lat_i, lon_i)
 
-    def getmag(self):
+    def getmag(self):  # 地磁気の値を取得するメソッド。
         [mag_x, mag_y, mag_z] = self.sensor.magnetic
         mag_x = mag_x - self.offset_mag_x
         mag_y = mag_y - self.offset_mag_y
         return (mag_x, mag_y, mag_z)
 
-    def getacc(self):
+    def getacc(self):  # 加速度の値を取得するメソッド。
         [accel_x, accel_y, accel_z] = self.sensor.acceleration
         return (accel_x, accel_y, accel_z)
 
-    def rad_magnet(self):
+    def rad_magnet(self):  # 地磁気方向を取得するメソッド。
         rad = math.atan2(self.mag_y, self.mag_x)
         return rad

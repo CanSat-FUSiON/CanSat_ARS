@@ -6,7 +6,7 @@ import datetime
 
 
 class Camerarun:
-    def __init__(self, resolution, framerate, occ_THR_low, occ_THR_high, range_THR, pt_time):
+    def __init__(self, resolution, framerate, occ_THR_low, occ_THR_high, range_THR, pt_time):  # 初期設定を行うメソッド。
         self.resolution = resolution
         self.framerate = framerate
         self.occ_THR_low = occ_THR_low
@@ -33,7 +33,7 @@ class Camerarun:
                 stream.seek(0)
                 stream.truncate()
 
-    def judge_distance(self):
+    def judge_distance(self):  # コーンとの距離を判断するメソッド。
         print(self.occ)
         if self.occ < self.occ_THR_low:
             print('can not find')
@@ -45,7 +45,7 @@ class Camerarun:
             print('goal')
             return 2
 
-    def judge_control(self):
+    def judge_control(self):  # 得られた生値から制御方向を定めるメソッド。
         print(self.cen_x)
         if -self.range_THR <= self.cen_x <= self.range_THR:
             return 0
@@ -54,7 +54,7 @@ class Camerarun:
         if self.cen_x < -self.range_THR:
             return 2
 
-    def run(self, motor):
+    def run(self, motor):  # 画像から判断された制御方向へ走行するメソッド。
         if self.jd_sign == 0:
             motor.left()
         elif self.jd_sign == 1:
@@ -71,8 +71,8 @@ class Camerarun:
             runpattern.forward(1)
             runpattern.stop()
 
-    def save(self):
+    def save(self):  # 画像を不揮発性のメモリに保存するメソッド。
         with picamera.PiCamera() as camera:
             camera.resolution = self.resolution
             US = datetime.timezone(datetime.timedelta(hours=-7), name='US')
-            camera.capture('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/images/' + str(datetime.datetime.now(US)) + '.jpg')
+            camera.capture('/home/pi/Desktop/Mission2/2.ARLISS/expall/905/images/' + str(datetime.datetime.now(US)) + '.jpg')  # ファイル名は時刻。
