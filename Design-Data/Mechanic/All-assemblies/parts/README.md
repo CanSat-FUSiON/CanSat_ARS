@@ -14,7 +14,7 @@ CanSatをなす部品が個別に格納されている。
 |substrate1.f3d|raspberryPi 0を載せた基板データ|✕|[here](./../../../Hardware/)|-|
 |substrate2.f3d|9軸センサーを載せた基板データ|✕|[here](./../../../Hardware/)|-|
 |substrate3.f3d|RaspberryPi Picoを載せた基板データ|✕|[here](./../../../Hardware/)|-|
-|GYSFDMAXB.f3d|GPSセンサーのデータ|✕|[here](https://akizukidenshi.com/download/ds/akizuki/AE-GPS_manual_r1.06_s.pdf)|-*|
+|GYSFDMAXB.f3d|GPSセンサーのデータ|✕|[here](https://akizukidenshi.com/download/ds/akizuki/AE-GPS_manual_r1.06_s.pdf)|[here](https://akizukidenshi.com/catalog/g/gK-13849/)*|
 |tire.f3d|タイヤのデータ|〇|-|-|
 |wheel.f3d|ホイール部分のデータ|〇|-|-|
 |shaft.f3d|シャフトのデータ|✕|-|-|
@@ -27,4 +27,4 @@ CanSatをなす部品が個別に格納されている。
 |spacer_30mm.f3d|下層と中層をつなぐスペーサーのデータ|✕|-|-|
 |stabilizer.f3d|スタビライザーとしてコンベックステープを取り付ける部品のデータ|〇|-|-|
 
-\* 秋月電子通商ではGYSFDMAXBの販売を終了している。
+*元の危機はすでに販売停止になっており、リンクは後継機のリンクとなっている。
