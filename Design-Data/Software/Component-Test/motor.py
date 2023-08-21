@@ -4,7 +4,10 @@ import time
 left_front=23       #モータードライバの接続されてるピンに合わせて番号を変更してください
 right_front=25
 left_back=24
-right_back=8
+right_back=8        #ラズパイ起動時にHighになっています
+PWM=22
+frq=200
+x=0
 
 GPIO.setwarnings(False)
 
@@ -13,6 +16,11 @@ GPIO.setup(right_front,GPIO.OUT)
 GPIO.setup(left_front,GPIO.OUT)
 GPIO.setup(right_back,GPIO.OUT)
 GPIO.setup(left_back,GPIO.OUT)
+GPIO.setup(PWM,GPIO.OUT)
+
+# PWM用のピンはPWMとして設定.("ピン番号","周波数")
+p = GPIO.output(PWM,frq)
+p.start(0)
 
 def stop(x):   #停止
     GPIO.output(right_front,GPIO.LOW)
@@ -83,18 +91,18 @@ def wave(x):     #前進後進を5回繰り返す
         time.sleep(x)
         return()
 
-def motortest(version, x):
-    if version == '1':
+def motortest(movement, x):
+    if movement == '1':
         forward()
-    elif version == '2':
+    elif movement == '2':
         back()
-    elif version == '3':
+    elif movement == '3':
         leftturn(x)
-    elif version == '4':
+    elif movement == '4':
         rightturn(x)
-    elif version == '5':
+    elif movement == '5':
         stop(x)
-    elif version == '6':
+    elif movement == '6':
         reforward(x)
-    elif version == '7':
+    elif movement == '7':
         wave(x)
