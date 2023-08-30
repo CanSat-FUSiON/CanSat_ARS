@@ -36,15 +36,15 @@
 - 8打ち
 - テグス  
 上から丈夫である一方重量が大きくなっている.
-重量制限などを考慮して選択されたし.  
+重量制限などを考慮して選択してほしい.  
     金剛打ち  
-    ![](https://www.taisei-mfg.co.jp/images/L/kongo.jpg)    
+    ![](https://www.taisei-mfg.co.jp/images/L/kongo.jpg)  
     16打ち  
     ![](https://www.taisei-mfg.co.jp/images/L/16uti.jpg)  
-    8打ち    
-    ![](https://www.taisei-mfg.co.jp/images/L/8uti.jpg)
+    8打ち  
+    ![](https://www.taisei-mfg.co.jp/images/L/8uti.jpg)  
     テグス  
-    ![](https://tsuri-labo.jp/wp-content/uploads/2020/09/5d5b51001cd5a79c902deb703dee00a7-1536x1024.jpeg)
+    ![](https://tsuri-labo.jp/wp-content/uploads/2020/09/5d5b51001cd5a79c902deb703dee00a7-1536x1024.jpeg)  
     [参考紐](https://www.taisei-mfg.co.jp/lesson.html)  
     [参考テグス](https://tsuri-labo.jp/word/24268#google_vignette)
     
@@ -52,12 +52,12 @@
 1. ハトメにラインを2回通し,輪を作る.  
 ![1](https://www.seaguar.ne.jp/knot/parts/img/05_1.png)  
 1. 本線にラインを4〜5回程度巻き付ける.  
-![2](https://www.seaguar.ne.jp/knot/parts/img/05_2.png)
+![2](https://www.seaguar.ne.jp/knot/parts/img/05_2.png)  
 1. ラインを1.で作った輪に通す.
-![3](https://www.seaguar.ne.jp/knot/parts/img/05_3.png)
+![3](https://www.seaguar.ne.jp/knot/parts/img/05_3.png)  
 1. ゆっくりと締め込む.
 ![4](https://www.seaguar.ne.jp/knot/parts/img/05_4.png)  
-[参考](https://www.seaguar.ne.jp/knot/parts/parts_5.html)
+[参考](https://www.seaguar.ne.jp/knot/parts/parts_5.html)  
 
 ## 畳み方
 ### パラコードを一つに集めるように畳む
@@ -65,5 +65,5 @@
 2. 半分に折りたたんで、その上に紐を折り曲げて置く
 3. コードを一緒に包むようにして、もう一度半分に折りたたむ
 4. さらに折りたたんで一回巻いて完成
-![パラシュート折りたたみ方](https://livedoor.blogimg.jp/computer_club/imgs/5/9/59d1e3ee-s.png)
+![パラシュート折りたたみ方](https://livedoor.blogimg.jp/computer_club/imgs/5/9/59d1e3ee-s.png)  
 [参考](http://joujaku-pc-club.blog.jp/archives/5920767.html)
