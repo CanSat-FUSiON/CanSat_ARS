@@ -53,9 +53,9 @@
 ![1](https://www.seaguar.ne.jp/knot/parts/img/05_1.png)  
 1. 本線にラインを4〜5回程度巻き付ける.  
 ![2](https://www.seaguar.ne.jp/knot/parts/img/05_2.png)  
-1. ラインを1.で作った輪に通す.
+1. ラインを1.で作った輪に通す.  
 ![3](https://www.seaguar.ne.jp/knot/parts/img/05_3.png)  
-1. ゆっくりと締め込む.
+1. ゆっくりと締め込む.  
 ![4](https://www.seaguar.ne.jp/knot/parts/img/05_4.png)  
 [参考](https://www.seaguar.ne.jp/knot/parts/parts_5.html)  
 
@@ -64,6 +64,7 @@
 1. パラコードが集まるように半分に4回折りたたむ
 2. 半分に折りたたんで、その上に紐を折り曲げて置く
 3. コードを一緒に包むようにして、もう一度半分に折りたたむ
-4. さらに折りたたんで一回巻いて完成
+4. さらに折りたたんで一回巻いて完成  
+
 ![パラシュート折りたたみ方](https://livedoor.blogimg.jp/computer_club/imgs/5/9/59d1e3ee-s.png)  
 [参考](http://joujaku-pc-club.blog.jp/archives/5920767.html)
