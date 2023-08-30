@@ -38,13 +38,13 @@
 上から丈夫である一方重量が大きくなっている.
 重量制限などを考慮して選択してほしい.  
     金剛打ち  
-    ![](https://www.taisei-mfg.co.jp/images/L/kongo.jpg)  
+    <img src="https://www.taisei-mfg.co.jp/images/L/kongo.jpg" width="280">  
     16打ち  
-    ![](https://www.taisei-mfg.co.jp/images/L/16uti.jpg)  
+    <img src="https://www.taisei-mfg.co.jp/images/L/16uti.jpg" width="280">  
     8打ち  
-    ![](https://www.taisei-mfg.co.jp/images/L/8uti.jpg)  
+    <img src="https://www.taisei-mfg.co.jp/images/L/8uti.jpg" width="280">  
     テグス  
-    ![](https://tsuri-labo.jp/wp-content/uploads/2020/09/5d5b51001cd5a79c902deb703dee00a7-1536x1024.jpeg)  
+    <img src="https://tsuri-labo.jp/wp-content/uploads/2020/09/5d5b51001cd5a79c902deb703dee00a7-1536x1024.jpeg" width="280">  
     [参考紐](https://www.taisei-mfg.co.jp/lesson.html)  
     [参考テグス](https://tsuri-labo.jp/word/24268#google_vignette)
     
