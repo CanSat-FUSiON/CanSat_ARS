@@ -4,16 +4,32 @@
 ## エンベロープの部品/材質
 |使用する部品|使用する材質|サイズ|
 |----|-----|------|
-|エンベロープ|PPクラフトシート+アルミホイル|　|
+|エンベロープ|PPクラフトシート+アルミホイル+紙やすり+コンベックステープ+ハトメ|　|
 |溶断用ひも|テグス|100mm|
+|固定用ひも|ナイロン紐|直径3mm|
+|その他|針金・ビニルテープ||
 
-## エンベロープの概要図
-![envelope表面](/Design-Data/Mechanic/Envelope/figures/envelope1.jpg)  
-![envelope裏面](/Design-Data/Mechanic/Envelope/figures/envelope2.jpg)  
+## エンベロープの概念図 
+以下に設計図を記載する.  
+![envelope設計図](/Design-Data/Mechanic/Envelope/figures/envelope.png)  
 
 ## 素材の選び方
 まず、PPクラフトシートについて、適度な反発力を持ち合わせていると考える.反発力がありすぎると、キャリア内部で変形し、上手く放出できないことがある.一方反発力が足りない場合、溶断したのちにCanSatがエンベロープから脱出できない恐れがある.  
 
-次に、アルミホイルについて、上記の画像には登場していないが、ARLISS本番にセンサの誤作動を防ぐために全体をアルミホイルで包んだ.  
+また、エンベロープが開放により確実に開くようにエンベロープ内にコンベックステープをとりつけた.  
+
+次に、紙やすりについて、タイヤが滑らないようにするためにエンベロープのタイヤが乗る部分に粗目の紙やすりをボンドで貼り付ける.  
+
+![envelope裏面](/Design-Data/Mechanic/Envelope/figures/envelope_back.jpg)  
+
+次に、アルミホイルについて、上記の画像には登場していないが、ARLISS本番に点火のタイミングでプログラムが停止したため、ignitionのスイッチと発射台間の無線で何らかの電磁波が発生し障害となっていたと考え、エンベロープにアルミホイルテープを巻き電磁遮蔽を行った.  
+
+![envelope表面](/Design-Data/Mechanic/Envelope/figures/envelope_front.jpg)  
 
 最後に、テグスについて、エンベロープを機体と固定し、着地後に焼き切るための紐である.  
+
+## 紐の結び方
+以下に、エンベロープに接続する紐の結び方・パラシュートの紐とエンベロープの紐の接続について描いたものが以下の図である.  
+ラインやパラシュート用のロープを通す穴に全てハトメを付けて強化した.
+![parashute_code](/Design-Data/Mechanic/Envelope/figures/envelope_code.jpg)  
+![envelope_code](/Design-Data/Mechanic/Envelope/figures/envelope_code2.jpg)  
