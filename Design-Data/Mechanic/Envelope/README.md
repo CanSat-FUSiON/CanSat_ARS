@@ -30,6 +30,6 @@
 
 ## 紐の結び方
 以下に、エンベロープに接続する紐の結び方・パラシュートの紐とエンベロープの紐の接続について描いたものが以下の図である.  
-ラインやパラシュート用のロープを通す穴に全てハトメを付けて強化した.
+また、ラインやパラシュート用のロープを通す穴に全てハトメを付けて強化した.
 ![parashute_code](/Design-Data/Mechanic/Envelope/figures/envelope_code.jpg)  
 ![envelope_code](/Design-Data/Mechanic/Envelope/figures/envelope_code2.jpg)  

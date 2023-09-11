@@ -37,6 +37,7 @@
 - テグス  
 上から丈夫である一方重量が大きくなっている.
 重量制限などを考慮して選択してほしい.  
+ARLISS2022では、テグスを用いてパラコードを作成した.  
     金剛打ち  
     <img src="https://www.taisei-mfg.co.jp/images/L/kongo.jpg" width="280">  
     16打ち  
@@ -49,6 +50,7 @@
     [参考テグス](https://tsuri-labo.jp/word/24268#google_vignette)
     
 ## 紐の結び方
+### ハトメとパラシュートの結び方
 1. ハトメにラインを2回通し,輪を作る.  
 ![1](https://www.seaguar.ne.jp/knot/parts/img/05_1.png)  
 1. 本線にラインを4〜5回程度巻き付ける.  
@@ -58,6 +60,10 @@
 1. ゆっくりと締め込む.  
 ![4](https://www.seaguar.ne.jp/knot/parts/img/05_4.png)  
 [参考](https://www.seaguar.ne.jp/knot/parts/parts_5.html)  
+### パラシュートの紐のまとめ方
+1. パラシュートのテグスを6本まとめる.  
+1. 8の字結びしてガムテープで固定する.
+![paracode](/Design-Data/Mechanic/Parachute/figures/paracode.jpg)  
 
 ## 畳み方
 ### パラコードを一つに集めるように畳む
