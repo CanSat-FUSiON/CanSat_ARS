@@ -34,17 +34,17 @@ pcにつないぎTeraTermを開いた状態でトグルスイッチを押した�
 
 ### ビルドのやり方
 上のリンクからアカウント作成，ログインしたのち，以下のようにFile>New>Mbed Progectと進みます．
-!()[setting_images/"mbed_1.png"]
+![](setting_images/"mbed_1.png")
 
 そうすると以下のような画面が出てくるため，**Example Projectをmbed2-example-blinky**に設定して新規プロジェクトを作成します．
-!()[setting_images/"mbed_2.png"]
+![](setting_images/"mbed_2.png")
 
 次に以下のようにActive Projectの確認とBuild targetの設定を行います．
-!()[setting_images/"mbed_4.png"]
+![](setting_images/"mbed_4.png")
 
 設定が行えたらプロジェクトを右クリックし，新規ファイルを追加します．
 ここに*main.cpp*，*FUSiON_RM92A.h*，*FUSiON_RM92A.cpp*を作成（コピペ）してください．
-!()[setting_images/"mbed_5.png"]
+![](setting_images/"mbed_5.png")
 
 記述が完了したらビルドを完了してください．
-!()[setting_images/"mbed_6.png"]
+![](setting_images/"mbed_6.png")
