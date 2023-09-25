@@ -1,4 +1,4 @@
-# All-assemblies
+# Mechanic
 CanSatをなす部品のCadデータを格納されている。
 ".f3z"はダウンロードした上でfusion360内でファイルを選び展開する。
 
