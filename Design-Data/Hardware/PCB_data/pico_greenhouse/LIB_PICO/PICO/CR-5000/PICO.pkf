@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "PICO"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "PICO")
+        (spec "default")
+    )
+)
